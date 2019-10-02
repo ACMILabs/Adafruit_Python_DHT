@@ -41,7 +41,7 @@ SENSORS = [DHT11, DHT22, AM2302]
 def get_platform():
     """Return a DHT platform interface for the currently detected platform."""
     plat = platform_detect.platform_detect()
-    print(f'Platform detected: {plat}')
+    # print(f'Platform detected: {plat}')
     if plat == platform_detect.RASPBERRY_PI:
         # Check for version 1 or 2 of the pi.
         version = platform_detect.pi_version()
